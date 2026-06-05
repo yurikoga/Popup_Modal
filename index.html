@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Confirmação de Exclusão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+
+    <button id="openModalBtn" style="background-color: rgb(3, 99, 155);">Clik Me</button>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-body">
+                
+                <div class="icon-box">
+                    <svg viewBox="0 0 512 512" width="60" height="60">
+                        <path fill="none" stroke="#F15E42" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 80c-97.2 0-176 78.8-176 176s78.8 176 176 176s176-78.8 176-176S353.2 80 256 80z"/>
+                        <path fill="#F15E42" d="M256 320a20 20 0 1020 20a20 20 0 00-20-20z"/>
+                        <path fill="none" stroke="#F15E42" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 160v128"/>
+                    </svg>
+                </div>
+
+                <h2>Confirm</h2>
+                <p>Are you sure want to permanently<br>delete this Photo?</p>
+
+                <div class="action-buttons">
+                    <button id="confirmBtn" class="btn-delete">Yes, Delete!</button>
+                    <button id="cancelBtn" class="btn-cancel">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
